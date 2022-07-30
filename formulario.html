@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro do Cliente</title>
+</head>
+<body>
+    <div>
+        <h1>Informações Pessoais</h1>
+        <p>Cadastro do Cliente</p>
+    </div>
+
+   <form>
+    <fieldset>
+        <div>
+            <label>Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="digite seu nome completo" required>
+        </div>
+
+        <div>
+            <label>Sexo:</label>
+            <label>
+                <input type="radio" name="sexo" value="Masculino" checked>Masculino
+            </label>
+            <label>
+                <input type="radio" name="sexo" value="Feminino" checked>Feminino
+            </label>
+        </div>
+
+        <div>
+            <label>Idade:</label>
+            <input type="text" name="idade" id="idade" placeholder="digite sua idade" required>
+        </div>
+
+        <div>
+            <label>Endereço:</label>
+            <input type="text" name="endereço" id="endereço" placeholder="digite seu endereço" required>
+        </div>
+
+        <div>
+            <label>Cidade:</label>
+            <input type="text" name="cidade" id="cidade" placeholder="digite o nome da sua cidade" required>
+        </div>
+
+        <div>
+            <label>Estado:</label>
+            <select id="estado">
+                <option selected disabled value="">selecionar</option>
+                <option>PA</option>
+                <option>GO</option>
+                <option>MG</option>
+            </select>
+        </div>
+
+        <div>
+            <label>CEP:</label>
+            <input type="text" name="cep" id="cep" placeholder="XXXXX-XXX" required>
+        </div>
+
+        <div>
+            <label>Tel/Res</label>
+            <input type="text" name="tel/res" id="tel/res" placeholder="(99) 9999-9999" required>
+        </div>
+
+        <div>
+            <label>Tel/Cel</label>
+            <input type="text" name="tel/cel" id="tel/cel" placeholder="(99) 99999-9999" required>
+        </div>
+
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" id="email" placeholder="digite seu endereço de email" required>
+        </div>
+
+    </fieldset>
+
+    <button>Incluir</button>
+   </form>
+</body>
+
+<!-- ESTILIZAÇÃO POR CSS -->
+<style>
+    *{
+        padding: 3px;
+    }
+
+    form{
+        padding-right: 950px;
+    }
+
+    input{
+        padding-right: 60px;
+        
+    }
+    ::placeholder{
+        overflow: visible;
+    }
+</style>
+</html>
