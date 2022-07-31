@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Tradição - Contato</title>
+</head>
+<body>
+    <div>
+        <p>Nome e sobrenome</p>
+        <input type="text" name="nomeEsobrenome" id="nomeEsobrenome">
+        
+        <p>Email</p>
+        <input type="email" name="email" id="email" placeholder="seuemail@dominio.com">
+        
+        <p>Telefone</p>
+        <input type="text" name="telefone" id="telefone" placeholder="(XX) XXXXX-XXXX">
+        
+        <p>Mensagem</p>
+        <input class="msg" type="text" name="mensagem" id="mensagem">
+    </div>
+
+    <div>
+        <fieldset><legend>Como prefere o nosso contato?</legend>
+        <label>
+            <input type="radio" name="email" value="Email">Email
+            <br>
+            <input type="radio" name="telefone" value="Telefone">Telefone
+            <br>
+            <input type="radio" name="whatsapp" value="Whatsapp">Whatsapp
+        </label> 
+        </fieldset>
+
+        <fieldset><legend>Qual horário prefere ser atendido?</legend>
+        <select>
+            <option selected disabled value="selecionar">selecionar</option>
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Noite</option>
+        </select>
+        </fieldset>
+        <br>
+
+        <input type="checkbox" id="novidades" name="novidades">
+        <label for="novidades">Gostaria de receber nossas novidades por email?</label>
+        <br>
+        <button>Enviar Formulário</button>
+    </div>
+    
+    <br>
+
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <a href="BarbeariaTradicaoPG1.html">Voltar</a>
+</body>
+
+<style>
+
+    *{
+        padding: 2px;
+    }
+
+    br{
+        padding-top: 2px;
+    }
+
+    input{
+        padding-right: 60px;
+    }
+
+    thead{
+        background-color: gray;
+        color: aliceblue;
+    }
+    thead tr{
+        border-bottom: solid 3px #444;
+    }
+
+    .msg{
+        padding: 60px;
+        padding-right: 120px;
+    }
+
+    ::placeholder{
+        overflow: visible;
+    }
+</style>
+</html>
